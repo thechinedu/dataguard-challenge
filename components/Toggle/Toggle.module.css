@@ -1,0 +1,41 @@
+.customToggleWrapper {
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  padding: var(--spacer-1\/2);
+  width: 45px;
+}
+
+.customToggleWrapper .icon {
+  fill: var(--white);
+}
+
+.customToggleWrapper.active {
+  background: var(--green);
+  justify-content: flex-end;
+}
+
+.customToggleWrapper.inactive {
+  background: var(--red);
+  justify-content: flex-start;
+}
+
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.label.active {
+  color: var(--green);
+}
+
+.label.inactive {
+  color: var(--red);
+}
